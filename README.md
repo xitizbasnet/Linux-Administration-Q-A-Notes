@@ -1508,9 +1508,6 @@ traceroute google.com
 
 ---
 
-Here’s the **Firewall & Networking + Process & Scheduling** info you gave me, nicely formatted with icons and easy-to-scan bullets, just like before:
-
----
 
 # 🔥 Firewall & Networking (Continued)
 
