@@ -1194,10 +1194,6 @@ restorecon -Rv /var/www/html
 ---
 
 
-Got it! You want the **Firewall & Networking** info but with icons and a bit of formatting, like a clean cheat-sheet style. Here's a polished, easy-to-read version with icons and bullet points:
-
----
-
 # 🔥 **Firewall & Networking Cheat Sheet**
 
 ---
@@ -2177,6 +2173,11 @@ systemctl list-timers
 
 ---
 
+
+Got it! Here's the same content with clear line breaks **after each question and answer** for better readability:
+
+---
+
 ### Servers
 
 ---
@@ -2188,35 +2189,51 @@ systemctl list-timers
 🔧 It automatically resolves dependencies, so required packages are installed without manual effort.
 💡 Example: `yum install vim` will install Vim along with any packages it needs to work.
 
+---
+
 **Q2. Difference between YUM and DNF**
 ⚡ DNF is the newer version of YUM used in latest RHEL/Fedora versions.
 ⚙️ It uses less memory, handles dependencies faster, and shows better error messages.
 💡 Example: `dnf install vim` works like YUM but is faster.
+
+---
 
 **Q3. What is a repository?**
 🗂️ A repository is a storage location (online or local) where software packages are kept.
 🔍 Types include official (trusted by OS), third-party (from developers), and local/offline repositories.
 💡 Example: CentOS base repo or EPEL repo.
 
+---
+
 **Q4. How to check installed packages?**
 📋 `yum list installed` lists all installed packages with versions and repositories.
 📊 Helps in tracking software already on the system.
+
+---
 
 **Q5. How to search for packages?**
 🔎 `yum search package_name` allows finding software in repositories without installing it.
 💡 Example: `yum search apache` lists all Apache-related packages.
 
+---
+
 **Q6. How to update all packages?**
 ⬆️ `yum update` downloads and installs the latest versions of all installed packages.
 🛡️ Ensures system is secure and has latest features.
+
+---
 
 **Q7. Advantages of YUM**
 ✅ Automatically manages dependencies, keeps software updated, easy to use.
 ⚠️ Reduces chances of broken packages.
 
+---
+
 **Q8. How to check package info?**
 ℹ️ `yum info package_name` displays version, repo source, size, and description.
 💡 Example: `yum info vim` shows info about Vim package.
+
+---
 
 **Q9. How to clean cache in YUM?**
 🧹 `yum clean all` removes downloaded package files to free up disk space.
@@ -2226,36 +2243,54 @@ systemctl list-timers
 
 #### Samba
 
+---
+
 **Q1. What is Samba?**
 🔗 Samba allows Linux systems to share files and printers with Windows systems.
 🖥️ It uses the SMB/CIFS protocol to communicate with Windows machines.
 💡 Example: A Linux folder can appear as a network drive in Windows.
 
+---
+
 **Q2. What protocol does Samba use?**
 📡 SMB (Server Message Block) or CIFS (Common Internet File System).
 🔒 Handles authentication, file access, and printing services over a network.
+
+---
 
 **Q3. Difference between SMB and NFS**
 🌐 SMB → cross-platform, works with Windows and Linux, good for mixed networks.
 ⚡ NFS → mainly for Linux/Unix networks, faster for Linux-only systems.
 
+---
+
 **Q4. Advantages of Samba**
 👍 Easy file sharing between Linux and Windows, supports user authentication, permissions, and encrypted passwords.
+
+---
 
 **Q5. How to check connected users?**
 👥 `smbstatus` shows active users, open files, and shared folders.
 📈 Helps in monitoring network usage.
 
+---
+
 **Q6. How to monitor shared folder access?**
 📂 Samba logs in `/var/log/samba/` record file access, login attempts, and errors.
+
+---
 
 **Q7. Security features of Samba**
 🔐 Supports user-level authentication, share-level security, password encryption.
 🛡️ Allows setting permissions for read/write access per user or group.
 
+---
+
 **Q8. What is a Samba domain controller?**
 🖥️ Linux can act as a central authentication server for Windows clients.
 🔑 Users log in with one account for network resources.
+
+---
 
 **Q9. Difference between Workgroup and Domain in Samba**
 👥 Workgroup → peer-to-peer, each system manages its own users.
@@ -2265,46 +2300,70 @@ systemctl list-timers
 
 #### Apache
 
+---
+
 **Q1. What is Apache?**
 🌐 Apache is a web server that hosts websites on Linux.
 📡 It listens on HTTP/HTTPS ports and serves web pages to clients.
 💡 Example: Hosting `http://example.com` on a Linux server.
 
+---
+
 **Q2. Advantages of Apache**
 🛠️ Open-source, flexible, supports modules for additional features.
 🔒 Works on almost all platforms and supports secure connections with SSL/TLS.
+
+---
 
 **Q3. Common ports used**
 🔌 HTTP → 80, HTTPS → 443.
 🌐 Ports allow web browsers to connect to the server.
 
+---
+
 **Q4. Difference between Apache and Nginx**
 ⚙️ Apache → process/thread-based, good for dynamic content, highly configurable.
 🚀 Nginx → event-driven, handles high traffic better, faster for static content.
 
+---
+
 **Q5. How to check running websites?**
 📋 `systemctl status httpd` or `netstat -tuln` to see active web services.
+
+---
 
 **Q6. How to monitor logs?**
 📂 `/var/log/httpd/access_log` → tracks page visits.
 📂 `/var/log/httpd/error_log` → shows errors and failures.
 
+---
+
 **Q7. What is a virtual host?**
 🌍 Allows hosting multiple websites on one server using different domains or ports.
 💡 Example: `example.com` and `test.com` on same IP.
 
+---
+
 **Q8. Advantages of SSL/TLS**
 🔒 Encrypts data between client and server to protect sensitive information.
 
+---
+
 **Q9. What is mod_rewrite?**
 🔄 Apache module to rewrite URLs for SEO, redirection, or user-friendly URLs.
+
+---
 
 **Q10. Difference between static and dynamic content**
 🖼️ Static → fixed files like HTML, images.
 ⚙️ Dynamic → generated using scripts like PHP or Python.
 
-
 ---
+
+If you'd like, I can also give this in Markdown or any other format. Just say the word!
+
+
+ 
 
 # 🌐 DNS (Domain Name System)
 
